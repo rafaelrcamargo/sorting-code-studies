@@ -14,18 +14,14 @@ int main()
 
   // * Initial log
   printf("> In:  ");
-  for (int i = 0; i < length(arr); ++i)
-  {
+  for (int i = 0; i < length(arr); ++i) {
     printf("%i ", arr[i]);
   }
 
   // ? Main loop
-  for (int i = 0; i < length(arr); ++i)
-  {
-    for (int ii = 0; ii < length(arr); ++ii)
-    {
-      if (arr[i] < arr[ii])
-      {
+  for (int i = 0; i < length(arr); ++i) {
+    for (int ii = 0; ii < length(arr); ++ii) {
+      if (arr[i] < arr[ii]) {
         int O = arr[i];
         int N = arr[ii];
 
@@ -38,10 +34,10 @@ int main()
 
   // * Final log
   printf("\n> Out: ");
-  for (int i = 0; i < length(arr); ++i)
-  {
+  for (int i = 0; i < length(arr); ++i) {
     printf("%i ", arr[i]);
   }
+
   printf("\n>> Iterations: %i", counter);
 
   // ? Static return
